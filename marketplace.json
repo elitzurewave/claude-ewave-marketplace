@@ -13,12 +13,12 @@
         "name": "Ewave",
         "url": "https://ewave.co.il"
       },
-      "homepage": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/ewave-development-suite-beta",
+      "homepage": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta",
       "repository": {
         "type": "git",
-        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/ewave-development-suite-beta"
+        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta"
       },
-      "downloadUrl": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/ewave-development-suite-beta?path=/&version=GBmain&_a=contents",
+      "downloadUrl": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta?path=/&version=GBmain&_a=contents",
       "license": "MIT",
       "keywords": [
         "dotnet",
