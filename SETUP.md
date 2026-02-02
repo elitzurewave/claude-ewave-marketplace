@@ -264,23 +264,17 @@ claude marketplace refresh
 claude plugins update ewave-development-suite-beta
 ```
 
-## Alternative: Azure DevOps / GitLab / Internal Git
+## Alternative: GitLab / Internal Git
 
 If using internal Git server:
 
 ```bash
-# Azure DevOps
-git remote add origin https://dev.azure.com/ewave/claude-code/_git/marketplace
-git remote add origin https://dev.azure.com/ewave/claude-code/_git/ewave-development-suite-beta
-
-# GitLab
-git remote add origin https://gitlab.ewave.internal/devops/claude-marketplace.git
-git remote add origin https://gitlab.ewave.internal/devops/ewave-development-suite-beta.git
+# GitLab (example)
+git remote add origin https://gitlab.example.com/devops/claude-marketplace.git
+git remote add origin https://gitlab.example.com/devops/ewave-development-suite-beta.git
 
 # Team adds marketplace
-claude marketplace add ewave https://dev.azure.com/ewave/claude-code/_git/marketplace
-# or
-claude marketplace add ewave https://gitlab.ewave.internal/devops/claude-marketplace
+claude marketplace add ewave https://gitlab.example.com/devops/claude-marketplace
 ```
 
 Update `marketplace.json` URLs accordingly.

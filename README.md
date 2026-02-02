@@ -75,7 +75,7 @@ In Claude Code chat:
       "description": "Plugin description",
       "repository": {
         "type": "git",
-        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/your-new-plugin"
+        "url": "https://github.com/elitzurewave/your-new-plugin.git"
       }
     }
   ]
