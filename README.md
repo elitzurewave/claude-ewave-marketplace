@@ -29,10 +29,18 @@ Enterprise .NET development workflow with:
 - .NET 10 SDK (optional, for .NET projects)
 
 **Install:**
-```bash
-claude marketplace add ewave https://github.com/ewave/claude-plugins-marketplace
-claude plugins install ewave-development-suite-beta
+
+In Claude Code chat, type:
 ```
+/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
+```
+
+Then:
+```
+/plugin
+```
+
+Go to **Discover** tab and install **ewave-development-suite-beta**
 
 ---
 
@@ -40,59 +48,17 @@ claude plugins install ewave-development-suite-beta
 
 ### Setting Up the Marketplace
 
-#### Option 1: GitHub Repository (Recommended)
+#### Option 1: Azure DevOps (Current Setup)
 
-1. **Create a new repository:**
-```bash
-git init
-git add .
-git commit -m "Initial marketplace setup"
-git remote add origin https://github.com/ewave/claude-plugins-marketplace.git
-git push -u origin main
+**Already deployed at:**
+- Marketplace: https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
+- Plugin: https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta
+
+**Team members connect:**
+
+In Claude Code chat:
 ```
-
-2. **Add plugins to the marketplace:**
-   - Place plugin repositories in the same organization
-   - Update `marketplace.json` with plugin metadata
-   - Push changes to main branch
-
-3. **Team members connect:**
-```bash
-# One-time setup
-claude marketplace add ewave https://github.com/ewave/claude-plugins-marketplace
-
-# Browse available plugins
-claude marketplace list
-
-# Install plugins
-claude plugins install ewave-development-suite-beta
-```
-
-#### Option 2: Internal Git Server (GitLab, Bitbucket, Azure DevOps)
-
-1. **Create repository on your Git server:**
-```bash
-git remote add origin https://git.ewave.internal/development/claude-plugins-marketplace.git
-git push -u origin main
-```
-
-2. **Update marketplace.json URLs** to point to your internal server
-
-3. **Team setup:**
-```bash
-claude marketplace add ewave https://git.ewave.internal/development/claude-plugins-marketplace
-```
-
-#### Option 3: Network File Share (Windows)
-
-1. **Copy marketplace to shared location:**
-```bash
-xcopy /E /I "C:\elitzur\Ewave.ai\claude-plugins\marketplace" "\\server\share\claude-marketplace"
-```
-
-2. **Team setup:**
-```bash
-claude marketplace add ewave file://server/share/claude-marketplace
+/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
 ```
 
 ### Adding New Plugins
@@ -109,9 +75,8 @@ claude marketplace add ewave file://server/share/claude-marketplace
       "description": "Plugin description",
       "repository": {
         "type": "git",
-        "url": "https://github.com/ewave/your-new-plugin.git"
-      },
-      "downloadUrl": "https://github.com/ewave/your-new-plugin/archive/refs/heads/main.zip"
+        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/your-new-plugin"
+      }
     }
   ]
 }
@@ -125,21 +90,13 @@ git push
 ```
 
 4. **Team members update:**
-```bash
-claude marketplace refresh
-claude plugins install your-new-plugin
+
+In Claude Code chat:
+```
+/plugin
 ```
 
-### Plugin Approval Process
-
-1. Developer creates plugin
-2. Submit PR to marketplace repository
-3. Team lead reviews:
-   - Security check
-   - Code quality
-   - Documentation completeness
-4. Merge to main
-5. Available to all team members
+Go to **Discover** tab and install the new plugin
 
 ### Versioning
 
@@ -155,88 +112,66 @@ Update plugin versions in `marketplace.json`:
 }
 ```
 
-### Monitoring Usage
-
-Track plugin installations:
-```bash
-# On marketplace server
-git log --grep="install" --oneline
-```
-
-### Security Considerations
-
-- ✅ Review all plugins before adding to marketplace
-- ✅ Use private repositories for sensitive plugins
-- ✅ Require authentication for Git access
-- ✅ Audit hook scripts for security issues
-- ✅ Scan for hardcoded secrets
-- ✅ Test plugins in sandbox before deployment
-
 ## For Team Members
 
 ### First-Time Setup
 
-1. **Add Ewave marketplace:**
-```bash
-claude marketplace add ewave https://github.com/ewave/claude-plugins-marketplace
+1. **Open Claude Code**
+
+2. **In the chat, type:**
+```
+/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
 ```
 
-2. **Browse available plugins:**
-```bash
-claude marketplace list
+3. **Browse and install:**
+```
+/plugin
 ```
 
-3. **Install plugins:**
-```bash
-claude plugins install ewave-development-suite-beta
-```
+4. **Go to "Discover" tab** and install **ewave-development-suite-beta**
 
-4. **Enable installed plugins:**
-```bash
-claude plugins enable ewave-development-suite-beta
-```
+The plugin is now active!
 
 ### Updating Plugins
 
-```bash
-# Refresh marketplace catalog
-claude marketplace refresh
-
-# Update specific plugin
-claude plugins update ewave-development-suite-beta
-
-# Update all plugins
-claude plugins update --all
+In Claude Code chat:
 ```
+/plugin
+```
+
+Go to **Installed** tab → Click plugin → Click **Update**
 
 ### Troubleshooting
 
 #### Marketplace Not Found
-```bash
-# Check configured marketplaces
-claude marketplace list
 
-# Re-add marketplace
-claude marketplace add ewave https://github.com/ewave/claude-plugins-marketplace --force
+In Claude Code chat:
+```
+/plugin
+```
+
+Go to **Manage** tab → Verify marketplace is listed
+
+If not, re-add:
+```
+/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
 ```
 
 #### Plugin Installation Fails
-```bash
-# Clear cache
-claude cache clear
 
-# Retry installation
-claude plugins install ewave-development-suite-beta --verbose
+In Claude Code chat:
 ```
+/plugin
+```
+
+Go to **Discover** tab → Try reinstalling the plugin
 
 #### Authentication Required (Private Repos)
-```bash
-# Configure Git credentials
-git config --global credential.helper store
 
-# Or use SSH
-git config --global url."git@github.com:".insteadOf "https://github.com/"
-```
+Ensure you have access to Azure DevOps:
+- VPN connected
+- Proper permissions on repositories
+- Personal Access Token configured if needed
 
 ## Support
 
