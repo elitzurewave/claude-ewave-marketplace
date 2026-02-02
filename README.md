@@ -32,7 +32,7 @@ Enterprise .NET development workflow with:
 
 In Claude Code chat, type:
 ```
-/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
+/plugin marketplace add https://github.com/elitzurewave/claude-ewave-marketplace
 ```
 
 Then:
@@ -48,17 +48,17 @@ Go to **Discover** tab and install **ewave-development-suite-beta**
 
 ### Setting Up the Marketplace
 
-#### Option 1: Azure DevOps (Current Setup)
+#### Deployment (GitHub)
 
 **Already deployed at:**
-- Marketplace: https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
-- Plugin: https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta
+- Marketplace: https://github.com/elitzurewave/claude-ewave-marketplace
+- Plugin: https://github.com/elitzurewave/ewave-development-suite-beta
 
 **Team members connect:**
 
 In Claude Code chat:
 ```
-/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
+/plugin marketplace add https://github.com/elitzurewave/claude-ewave-marketplace
 ```
 
 ### Adding New Plugins
@@ -120,7 +120,7 @@ Update plugin versions in `marketplace.json`:
 
 2. **In the chat, type:**
 ```
-/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
+/plugin marketplace add https://github.com/elitzurewave/claude-ewave-marketplace
 ```
 
 3. **Browse and install:**
@@ -154,7 +154,7 @@ Go to **Manage** tab → Verify marketplace is listed
 
 If not, re-add:
 ```
-/plugin marketplace add https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace
+/plugin marketplace add https://github.com/elitzurewave/claude-ewave-marketplace
 ```
 
 #### Plugin Installation Fails
@@ -168,10 +168,9 @@ Go to **Discover** tab → Try reinstalling the plugin
 
 #### Authentication Required (Private Repos)
 
-Ensure you have access to Azure DevOps:
-- VPN connected
+For private GitHub repositories:
+- Personal Access Token configured
 - Proper permissions on repositories
-- Personal Access Token configured if needed
 
 ## Support
 

@@ -3,7 +3,7 @@
   "description": "Internal Claude Code plugins for Ewave development teams",
   "version": "1.0.0",
   "organization": "Ewave",
-  "url": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace",
+  "url": "https://github.com/elitzurewave/claude-ewave-marketplace",
   "plugins": [
     {
       "name": "ewave-development-suite-beta",
@@ -13,12 +13,12 @@
         "name": "Ewave",
         "url": "https://ewave.co.il"
       },
-      "homepage": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/ewave-development-suite-beta",
+      "homepage": "https://github.com/elitzurewave/ewave-development-suite-beta",
       "repository": {
         "type": "git",
-        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/ewave-development-suite-beta"
+        "url": "https://github.com/elitzurewave/ewave-development-suite-beta"
       },
-      "downloadUrl": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/ewave-development-suite-beta?path=/&version=GBmain&_a=contents",
+      "downloadUrl": "https://github.com/elitzurewave/ewave-development-suite-beta/archive/refs/heads/main.zip",
       "license": "MIT",
       "keywords": [
         "dotnet",
