@@ -1,0 +1,86 @@
+{
+  "name": "Ewave Organization Marketplace",
+  "description": "Internal Claude Code plugins for Ewave development teams",
+  "version": "1.0.0",
+  "organization": "Ewave",
+  "url": "https://onlinetfs.ewave.co.il/Ewave_Online/_git/Claude-Ewave-Marketplace",
+  "plugins": [
+    {
+      "name": "ewave-development-suite-beta",
+      "version": "0.1.0-beta",
+      "description": "Ewave enterprise .NET development workflow with TDD, security review, code quality, and multi-agent orchestration patterns. Includes custom statusline with git branch info.",
+      "author": {
+        "name": "Ewave",
+        "url": "https://ewave.co.il"
+      },
+      "source": {
+        "source": "git",
+        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta.git"
+      },
+      "homepage": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta",
+      "repository": {
+        "type": "git",
+        "url": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta"
+      },
+      "downloadUrl": "https://onlinetfs.ewave.co.il/Ewave_Online/Claude-Ewave-Marketplace/_git/ewave-development-suite-beta?path=/&version=GBmain&_a=contents",
+      "license": "MIT",
+      "keywords": [
+        "dotnet",
+        "csharp",
+        "tdd",
+        "security",
+        "code-review",
+        "enterprise",
+        "workflow",
+        "agents",
+        "hooks",
+        "statusline"
+      ],
+      "category": "Development Workflow",
+      "tags": [".NET", "Enterprise", "Security", "TDD", "Azure DevOps"],
+      "screenshots": [],
+      "featured": true,
+      "verified": true,
+      "minClaudeVersion": "2.0.0",
+      "compatibility": {
+        "platforms": ["win32", "darwin", "linux"],
+        "node": ">=18.0.0"
+      },
+      "requirements": {
+        "required": [
+          "Node.js 18+ for hook scripts and statusline"
+        ],
+        "optional": [
+          ".NET 10 SDK for .NET projects",
+          "Prettier for auto-formatting",
+          "TypeScript for TS checking"
+        ]
+      },
+      "features": [
+        "Custom statusline with username@hostname:cwd (git:branch)",
+        "10 specialized agents",
+        "15 slash commands",
+        "13 reusable skills",
+        "9 development rules",
+        "12 event hooks"
+      ],
+      "stats": {
+        "agents": 10,
+        "skills": 13,
+        "commands": 15,
+        "rules": 9,
+        "hooks": 12
+      },
+      "changelog": {
+        "0.1.0-beta": "Initial beta release with comprehensive .NET workflow and custom statusline"
+      }
+    }
+  ],
+  "categories": [
+    "Development Workflow",
+    "Code Quality",
+    "Security",
+    "Testing",
+    "Documentation"
+  ]
+}
