@@ -1,23 +1,21 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ewave-marketplace",
   "description": "Internal Claude Code plugins for Ewave development teams",
-  "version": "1.0.0",
   "owner": {
     "name": "Ewave",
-    "url": "https://ewave.co.il"
+    "email": "devops@ewave.co.il"
   },
   "plugins": [
     {
       "name": "ewave-development-suite-beta",
-      "version": "0.1.0-beta",
       "description": "Ewave enterprise .NET development workflow with TDD, security review, code quality, and multi-agent orchestration.",
-      "repository": "https://github.com/elitzurewave/ewave-development-suite-beta.git",
       "source": {
-        "type": "git",
+        "source": "url",
         "url": "https://github.com/elitzurewave/ewave-development-suite-beta.git"
       },
-      "license": "MIT",
-      "keywords": ["dotnet", "csharp", "tdd", "security", "code-review", "enterprise"]
+      "category": "development",
+      "homepage": "https://github.com/elitzurewave/ewave-development-suite-beta"
     }
   ]
 }
